@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+    height: 3000px;
+    background-color: #c2b792;
+}
+
+.principal-image /* Primeira imagem da tela */ {
+    position: relative;
+    top: 100px;
+    border-radius: 50px;
+    height: 512px;
+    width: 768px;
+    margin: auto;
+    background-position: 50% 50%;
+    overflow: hidden;
+}
+
+
+.grid-products /* Tabela de produtos */ {
+    margin-right: 84px;
+    margin-left: 84px;
+    margin-top: 320px;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+
+}
+
+.grid-products div {
+    height: 412px;
+    width: 568px;
+    position: relative;
+}
+
+.shirts {
+    background: url(../Images/men-shirts-2.png);
+    background-position: 0% 100%;
+}
+
+.pants {
+    background: url(../Images/pants-1.png);
+    background-position: 0% 50%;
+}
+
+.shoes {
+    background: url(../Images/men-shoes-2.png);
+    background-position: 60% 50%;
+}
+
+.bags {
+    background: url(../Images/bag.png);
+    background-position: 50% 50%;
+}
+
+.grid-products p {
+    margin: 0;
+    color: white;
+    position: absolute;
+    right: 50%;
+    bottom: 5%;
+    text-shadow: 1px 1px 3px rgba(0,0,0,.9);
+}
+
+.grid-products a {
+    color: inherit;
+    text-decoration: none;
+}

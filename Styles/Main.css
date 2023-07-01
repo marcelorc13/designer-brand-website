@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: arial, sans-serif;
-    height: 3000px;
     background-color: #c2b792;
 }
 
@@ -18,13 +17,13 @@ body {
 
 
 .grid-products /* Tabela de produtos */ {
-    margin-right: 84px;
-    margin-left: 84px;
+    margin-right: 90px;
+    margin-left: 90px;
     margin-top: 320px;
     justify-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 24px;
+    row-gap: 16px;
 
 }
 
@@ -32,6 +31,7 @@ body {
     height: 412px;
     width: 568px;
     position: relative;
+    margin-bottom: 200px;
 }
 
 .shirts {

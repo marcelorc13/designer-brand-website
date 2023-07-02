@@ -2,7 +2,6 @@ body {
     margin: 0;
     font-family: arial, sans-serif;
     background-color: #c2b792;
-    height: 3000px;
 }
 
 main {
@@ -20,6 +19,7 @@ main {
     margin-top: 100px;
     margin-bottom: 120px;
     margin-right: 0;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.3);
 }
 
 .principal-image-div img { 
@@ -27,12 +27,12 @@ main {
     width: 768px;
 }
 
-.grid-products-div /* Tabela de produtos 1 */{
+.grid-products-div{
     display: flex;
     flex-direction: column;
 }
 
-.grid-products {
+.grid-products  /* Tabela de produtos 1 */ {
     justify-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -42,14 +42,16 @@ main {
 }
 
 .grid-products div {
-    height: 412px;
-    width: 568px;
+    height: 442px;
+    width: 598px;
     position: relative;
+    cursor: pointer;
+    box-shadow: 2px 1px 5px rgba(0,0,0,.3);
 }
 
 .shirts {
-    background: url(../Images/men-shirts-2.png);
-    background-position: 0% 100%;
+    background: url(../Images/men-shirts-4.png);
+    background-position: 0% 50%;
 }
 
 .pants {
@@ -81,27 +83,25 @@ main {
     text-decoration: none;
 }
 
-.grid-products-div-2 {
+
+
+.grid-products-div-2 /* Tabela de Produtos Horizontal*/ {
     display: block;
 }
 .grid-products-2 {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 30%;
-    gap: 20px;
-    align-items: left;
 
     overflow-x: auto;
     overscroll-behavior-inline: contain;
-}
 
-.grid-products-2 div {
-    height: 400px;
-    background-color: lightgray;
+    margin-bottom: 120px;
 }
 
 .grid-products-2::-webkit-scrollbar {
     width: 1px;
+    scroll-behavior: smooth;
 }
 .grid-products-2::-webkit-scrollbar-track {
     background-color: #a59b7d;
@@ -109,4 +109,41 @@ main {
 
 .grid-products-2::-webkit-scrollbar-thumb {
     background-color: #c2b792;
+}
+
+
+.product-div /*Produtos da tela inicial*/ {
+    position: relative;
+    display: flex;
+    width: 200px;
+}
+
+.product-div img {
+    height: 480px;
+    object-fit: cover;
+    padding-bottom: 50px;
+}
+
+.product-div a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.product-name, .product-price {
+    margin: 0;
+    position: absolute;
+    bottom: 24px;
+    left: 0px;
+    color: rgb(53, 53, 53);
+}
+
+.product-name:hover {
+    text-decoration: underline;
+}
+
+.product-price {
+    bottom: 0px
+}
+.product-price span {
+    font-size: 13px;
 }

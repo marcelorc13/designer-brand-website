@@ -27,6 +27,7 @@ main {
     width: 768px;
 }
 
+
 .grid-products-div{
     display: flex;
     flex-direction: column;
@@ -46,27 +47,34 @@ main {
     width: 598px;
     position: relative;
     cursor: pointer;
-    box-shadow: 2px 1px 5px rgba(0,0,0,.3);
 }
 
 .shirts {
     background: url(../Images/men-shirts-4.png);
     background-position: 0% 50%;
+    border-top-left-radius: 20px;
+    box-shadow: -3px -2px 10px rgba(0,0,0,.3);
 }
 
 .pants {
     background: url(../Images/pants-1.png);
     background-position: 0% 50%;
+    border-top-right-radius: 20px;
+    box-shadow: 3px -2px 10px rgba(0,0,0,.3);
 }
 
 .shoes {
     background: url(../Images/men-shoes-2.png);
     background-position: 60% 50%;
+    border-bottom-left-radius: 20px;
+    box-shadow: -3px 2px 10px rgba(0,0,0,.3);
 }
 
 .bags {
     background: url(../Images/bag.png);
     background-position: 50% 50%;
+    border-bottom-right-radius: 20px;
+    box-shadow: 3px 2px 10px rgba(0,0,0,.3);
 }
 
 .grid-products p {
@@ -76,6 +84,10 @@ main {
     right: 50%;
     bottom: 5%;
     text-shadow: 1px 1px 3px rgba(0,0,0,.9);
+}
+
+.grid-products p:hover {
+    text-decoration: underline;
 }
 
 .grid-products a {
@@ -89,7 +101,27 @@ main {
     flex-direction: column;
     width: 1220px;
     margin-bottom: 120px;
+    text-align: center;
 }
+
+.grid-products-div-2 h1 {
+    margin: 0;
+    font: normal 16px arial;
+    color: #575343;
+}
+
+.grid-products-div-title {
+    color: inherit;
+    text-decoration: inherit;
+    align-self: flex-start;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.grid-products-div-2 a:hover {
+    text-decoration: underline;
+}
+
 .grid-products-2 {
     display: grid;
     grid-auto-flow: column;
@@ -111,6 +143,7 @@ main {
     height: 492px;
     object-fit: cover;
     position: 100%;
+    cursor: pointer;
 }
 
 .product-name {

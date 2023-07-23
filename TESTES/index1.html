@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Origem</title>
+</head>
+<body>
+  <button onclick="redirecionar()">Ir para a página de destino</button>
+
+  <script>
+    function redirecionar() {
+      // Define o novo título no localStorage
+      localStorage.setItem('novoTitulo', 'Novo Título da Página de Destino');
+
+      // Redireciona para a página de destino
+      window.location.href = 'index2.html';
+    }
+  </script>
+</body>
+</html>

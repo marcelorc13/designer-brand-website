@@ -8,6 +8,7 @@
     <title>... - Logo</title>
     <link rel="stylesheet" href="Styles/Header.css">
     <link rel="stylesheet" href="Styles/Main.css">
+    <link rel="stylesheet" href="Styles/Product-Page.css">
 </head>
 
 <body>
@@ -16,10 +17,10 @@
             <div class="left-header-div">
                 <div class="logo"><a href="Home-Page.html">LOGO</a></div>
                 <ul class="header-list-left">
-                    <li>Men</li>
-                    <li>Women</li>
-                    <li>Bags</li>
-                    <li>Collections</li>
+                    <li>MEN</li>
+                    <li>WOMEN</li>
+                    <li>BAGS</li>
+                    <li>COLLECTIONS</li>
                 </ul>
             </div>
 
@@ -33,7 +34,49 @@
         </div>
     </header>
 
-    <script src="script.js"></script>
+    <main>
+        <div class="product-container">
+            <div class="product-image-div">
+                <img class="product-image" src="Images/men-shirt-texturized.png" alt="Imagem do produto">
+            </div>
+            <div class="product-infos">
+                <div class="productName">
+                    Nome Produto
+                </div>
+
+                <div class="productPrice">
+                    R$ 00,00
+                </div>
+
+                <div>
+                    <select id="tamanho">
+                        <option value="">SS</option>
+                        <option value="" selected>S</option>
+                        <option value="">M</option>
+                        <option value="">L</option>
+                        <option value="">XL</option>
+                        <option value="">XXL</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="number" id="quantidade" value="1">
+                </div>
+
+                <div>
+                    <button class="btn shopping-bag" value="adcionarCarrinho">
+                        ADD TO SHOPPING BAG
+                    </button>
+
+                    <button class="btn shop-now" value="comprarAgora">
+                        SHOP NOW
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/productPage.js"></script>
 </body>
 
 </html>

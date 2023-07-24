@@ -1,0 +1,23 @@
+main {
+    margin-top: 80px;
+}
+
+.product-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.product-image-div {
+    display: flex;
+    justify-content: center;
+}
+
+.product-image {
+    width: 56%;
+}
+
+.product-infos {
+    display: flex;
+    flex-direction: column;
+}

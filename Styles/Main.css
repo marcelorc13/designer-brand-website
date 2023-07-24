@@ -161,6 +161,7 @@ main {
 }
 
 .product-div a {
+    cursor: pointer;
     display: inline-block;
     color: inherit;
     text-decoration: inherit;
@@ -178,4 +179,27 @@ main {
 
 .grid-products-2::-webkit-scrollbar-thumb {
     background-color: #c2b792;
+}
+
+
+footer {
+    position: relative;
+    background-color: #575343;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 50px;
+    padding-top: 20px;
+}
+
+.footer-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 30px;
+}
+
+.social-medias img {
+    margin-right: 10px;
 }

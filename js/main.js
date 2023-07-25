@@ -2,6 +2,8 @@ const produtos = document.querySelectorAll('.product-link')
 const imagensProdutos = document.querySelectorAll('.product-div img')
 const categorias = document.querySelectorAll('.categories')
 const preco = document.querySelectorAll('.product-price')
+const imagem = document.querySelectorAll('.product-div img')
+
 
 
 categorias.forEach((categoria) => {
@@ -17,8 +19,10 @@ produtos.forEach((produto, index) => {
     window.location.href = 'Product-Page.html'
     localStorage.setItem('tituloProduto', `${produto.innerHTML} - LOGO`)
     localStorage.setItem('nomeProduto', `${produto.innerHTML}`)
-    localStorage.setItem('precoProduto', `${preco[index].innerHTML}`)
+    localStorage.setItem('precoProduto', preco[index].innerHTML)
+    localStorage.setItem('imagemProduto', imagem[index].src)
   })
 })
+
 
 

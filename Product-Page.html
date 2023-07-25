@@ -9,14 +9,26 @@
     <link rel="stylesheet" href="Styles/Header.css">
     <link rel="stylesheet" href="Styles/Main.css">
     <link rel="stylesheet" href="Styles/Product-Page.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                principal: '#c2b792',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 
 <body>
     <header>
-        <div class="all-header">
+        <div class="all-header h-36">
             <div class="left-header-div">
-                <div class="logo"><a href="Home-Page.html">LOGO</a></div>
-                <ul class="header-list-left">
+                <div class="logo"><a class="text-6xl" href="Home-Page.html">LOGO</a></div>
+                <ul class="header-list-left ">
                     <li>MEN</li>
                     <li>WOMEN</li>
                     <li>BAGS</li>
@@ -34,10 +46,10 @@
         </div>
     </header>
 
-    <main>
-        <div class="product-container">
+    <main class="pt-36 lg:pt-44">
+        <div class="product-container flex flex-col w-full lg:flex-row">
             <div class="product-image-div">
-                <img class="product-image" src="Images/men-shirt-texturized.png" alt="Imagem do produto">
+                <img class="product-image w-full" src="Images/men-shirt-texturized.png" alt="Imagem do produto">
             </div>
             <div class="product-infos">
                 <div class="productName">

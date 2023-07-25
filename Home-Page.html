@@ -8,33 +8,44 @@
     <title>LOGO</title>
     <link rel="stylesheet" href="Styles/Header.css">
     <link rel="stylesheet" href="Styles/Main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        principal: '#c2b792',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
-    <header>
-        <div class="all-header">
-            <div class="left-header-div">
-                <div class="logo"><a href="Home-Page.html">LOGO</a></div>
-                <ul class="header-list-left">
-                    <li>MEN</li>
-                    <li>WOMEN</li>
-                    <li>BAGS</li>
-                    <li>COLLECTIONS</li>
-                </ul>
-            </div>
+<body class="bg-principal pt-36 lg:pt-16">
+    <header class="bg-black bg-opacity-30 fixed flex flex-row top-0 right-0 left-0 h-36 lg:h-16 items-center justify-between hover:bg-white transition duration-300">
+        <div class="flex flex-row items-center">
+            <div class="text-7xl lg:text-4xl font-bold px-8 select-none"><a href="Home-Page.html">LOGO</a></div>
+            <ul class="hidden lg:flex text-xl gap-x-4 items-center h-16 cursor-pointer">
+                <li class="hover:underline">MEN</li>
+                <li class="hover:underline">WOMEN</li>
+                <li class="hover:underline">BAGS</li>
+                <li class="hover:underline">COLLECTIONS</li>
+            </ul>
+        </div>
 
-            <div>
-                <ul class="header-list-right">
-                    <li><input type="image" src="Icons/heart.svg" name="WishButton" id="WishListButton"></li>
-                    <li><input type="image" src="Icons/search.svg" name="SearchBut" id="SearchButton"></li>
-                    <li><input type="image" src="Icons/bag.svg" name="CartButton" id="CartButton"></li>
-                </ul>
-            </div>
+        <div>
+            <ul class="flex flex-row gap-x-8 pe-8">
+                <li class="h-16 w-16 lg:h-6 lg:w-6"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image" src="Icons/heart.svg" name="WishButton" id="WishListButton"></li>
+                <li class="h-16 w-16 lg:h-6 lg:w-6"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image" src="Icons/search.svg" name="SearchBut" id="SearchButton"></li>
+                <li class="h-16 w-16 lg:h-6 lg:w-6"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image" src="Icons/bag.svg" name="CartButton" id="CartButton"></li>
+                <li class="h-16 w-16 lg:h-6 lg:w-6 lg:hidden"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image" src="Icons/hamburger-menu.svg" name="CartButton" id="CartButton"></li>
+            </ul>
         </div>
     </header>
 
 
-    <main>
+    <main class="">
         <div class="principal-image-div">
             <img src="Images/man-in-chair.png">
         </div>
@@ -125,23 +136,6 @@
                 </div>
             </section>
         </div>
-
-        <!-- <footer>
-            <div class="footer-div">
-                <div class="social-medias">
-                    <img src="Icons/instagram.svg" alt="ìcone instagram">
-                    <img src="Icons/twitter.svg" alt="ìcone twitter">
-                    <img src="Icons/discord.svg" alt="ìcone discord">
-                </div>
-
-                <div>
-                    contato
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <p>&#169; 2023 LOGO Todos os direitos reservados.</p>
-            </div>
-        </footer> -->
     </main>
 
     <script src="js/main.js"></script>

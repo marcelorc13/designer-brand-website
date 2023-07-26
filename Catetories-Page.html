@@ -22,28 +22,27 @@
       </script>
 </head>
 
-<body>
-    <header>
-        <div class="all-header">
-            <div class="left-header-div">
-                <div class="logo"><a href="Home-Page.html">LOGO</a></div>
-                <ul class="header-list-left">
-                    <li>MEN</li>
-                    <li>WOMEN</li>
-                    <li>BAGS</li>
-                    <li>COLLECTIONS</li>
-                </ul>
-            </div>
+<body class="bg-principal pt-36 lg:pt-16">
+  <header class="bg-black bg-opacity-30 fixed flex flex-row top-0 right-0 left-0 h-36 lg:h-16 items-center justify-between hover:bg-white transition duration-300">
+      <div class="flex flex-row items-center">
+          <div class="text-7xl lg:text-4xl font-bold px-8 select-none"><a href="Home-Page.html">LOGO</a></div>
+          <ul class="hidden lg:flex text-xl gap-x-4 items-center h-16 cursor-pointer">
+              <li class="hover:underline">MEN</li>
+              <li class="hover:underline">WOMEN</li>
+              <li class="hover:underline">BAGS</li>
+              <li class="hover:underline">COLLECTIONS</li>
+          </ul>
+      </div>
 
-            <div>
-                <ul class="header-list-right">
-                    <li><input type="image" src="Icons/heart.svg" name="WishButton" id="WishListButton"></li>
-                    <li><input type="image" src="Icons/search.svg" name="SearchBut" id="SearchButton"></li>
-                    <li><input type="image" src="Icons/bag.svg" name="CartButton" id="CartButton"></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+      <div>
+          <ul class="flex flex-row gap-x-8 pe-8">
+              <li class="h-16 w-16 lg:h-6 lg:w-6"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image" src="Icons/heart.svg" name="WishButton" id="WishListButton"></li>
+              <li class="h-16 w-16 lg:h-6 lg:w-6"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image" src="Icons/search.svg" name="SearchBut" id="SearchButton"></li>
+              <li class="h-16 w-16 lg:h-6 lg:w-6"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image" src="Icons/bag.svg" name="CartButton" id="CartButton"></li>
+              <li class="h-16 w-16 lg:h-6 lg:w-6 lg:hidden"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image" src="Icons/hamburger-menu.svg" name="CartButton" id="CartButton"></li>
+          </ul>
+      </div>
+  </header>
 
     <script src="js/categoriesPage.js"></script>
 </body>

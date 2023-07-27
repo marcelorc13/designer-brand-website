@@ -22,8 +22,9 @@
     </script>
 </head>
 
-<body class="bg-principal pt-36 lg:pt-16 overflow-y-auto">
-    <header class="bg-black bg-opacity-30 fixed flex flex-row top-0 right-0 left-0 h-36 lg:h-16 items-center justify-between hover:bg-white transition duration-300 z-50">
+<body class="bg-principal pt-36 lg:pt-16 overflow-y-auto pb-40 relative">
+    <header
+        class="bg-black bg-opacity-30 fixed flex flex-row top-0 right-0 left-0 h-36 lg:h-16 items-center justify-between hover:bg-white transition duration-300 z-50">
         <div class="flex flex-row items-center">
             <div class="text-7xl lg:text-4xl font-bold px-8 select-none"><a href="Home-Page.html">LOGO</a></div>
             <ul class="hidden lg:flex text-xl gap-x-4 items-center h-16 cursor-pointer">
@@ -36,10 +37,14 @@
 
         <div>
             <ul class="flex flex-row gap-x-8 pe-8">
-                <li class="h-16 w-16 lg:h-6 lg:w-6"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image" src="Icons/heart.svg" name="WishButton" id="WishListButton"></li>
-                <li class="h-16 w-16 lg:h-6 lg:w-6"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image" src="Icons/search.svg" name="SearchBut" id="SearchButton"></li>
-                <li class="h-16 w-16 lg:h-6 lg:w-6"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image" src="Icons/bag.svg" name="CartButton" id="CartButton"></li>
-                <li class="h-16 w-16 lg:h-6 lg:w-6 lg:hidden"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image" src="Icons/hamburger-menu.svg" name="CartButton" id="CartButton"></li>
+                <li class="h-16 w-16 lg:h-6 lg:w-6"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image"
+                        src="Icons/heart.svg" name="WishButton" id="WishListButton"></li>
+                <li class="h-16 w-16 lg:h-6 lg:w-6"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image"
+                        src="Icons/search.svg" name="SearchBut" id="SearchButton"></li>
+                <li class="h-16 w-16 lg:h-6 lg:w-6"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image"
+                        src="Icons/bag.svg" name="CartButton" id="CartButton"></li>
+                <li class="h-16 w-16 lg:h-6 lg:w-6 lg:hidden"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image"
+                        src="Icons/hamburger-menu.svg" name="CartButton" id="CartButton"></li>
             </ul>
         </div>
     </header>
@@ -50,7 +55,7 @@
         <div class="my-16 hidden lg:block">
             <img class="mx-auto rounded-lg w-4/5 lg:w-3/5" src="Images/man-in-chair.png">
         </div>
-
+        <!--Principal Banner Mobile-->
         <div class="my-36 lg:hidden">
             <img class="mx-auto rounded-lg w-4/5 lg:w-1/5" src="Images/conceitual-banne-mobile.png">
         </div>
@@ -60,95 +65,96 @@
         <div class="mx-12">
             <section class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-36 lg:mb-20 items-center">
                 <div class="categories shirts mx-auto w-full relative">
-                    <img class="sm:max-lg:rounded-lg lg:rounded-tl-lg w-full" src="Images/men-shirts-4.png"> 
+                    <img class="sm:max-lg:rounded-lg lg:rounded-tl-lg w-full" src="Images/men-shirts-4.png">
                     <p class="absolute bottom-8 right-1/2 text-white text-xl lg:text-base lg:bottom-4">Shirts</p>
                 </div>
 
                 <div class="categories pants h-max mx-auto w-full relative">
-                    <img class="sm:max-lg:rounded-lg lg:rounded-tr-lg w-full" src="Images/pants-1.png"> 
+                    <img class="sm:max-lg:rounded-lg lg:rounded-tr-lg w-full" src="Images/pants-1.png">
                     <p class="absolute bottom-8 right-1/2 text-white text-xl lg:text-base lg:bottom-4">Pants</p>
                 </div>
 
                 <div class="categories shoes mx-auto w-full relative">
-                    <img class="sm:max-lg:rounded-lg lg:rounded-bl-lg w-full" src="Images/men-shoes-2.png"> 
+                    <img class="sm:max-lg:rounded-lg lg:rounded-bl-lg w-full" src="Images/men-shoes-2.png">
                     <p class="absolute bottom-8 right-1/2 text-white text-xl lg:text-base lg:bottom-4">Shoes</p>
                 </div>
 
                 <div class="categories bags mx-auto w-full relative">
-                    <img class="sm:max-lg:rounded-lg lg:rounded-br-lg w-full" src="Images/bag.png"> 
+                    <img class="sm:max-lg:rounded-lg lg:rounded-br-lg w-full" src="Images/bag.png">
                     <p class="absolute bottom-8 right-1/2 text-white text-xl lg:text-base lg:bottom-4">Bags</p>
                 </div>
             </section>
         </div>
 
-        <!---->
-        <div class="">
-            <a href="" class="">
-                <h1>Shirts</h1>
-            </a>
-            <section class="">
-                <div class="product-div">
-                    <img src="/Images/men-shirt-texturized.png">
+        <!--Product Section Shirts-->
+        <section class=" mx-12 flex flex-row overflow-x-auto gap-4 snap-x scroll-smooth h-fit">
+            <div class="product-div w-6/6 lg:2/6 shrink-0 snap-center">
+                <img src="/Images/men-shirt-texturized.png">
 
-                    <a class="product-link">
-                        Texturized Shirt
-                    </a>
+                <a class="product-link cursor-pointer text-2xl lg:text-xl ">
+                    Texturized Shirt
+                </a>
 
-                    <p class="product-price">39.99 <span>U$D</span></p>
-                </div>
+                <p class="product-price text-2xl lg:text-xl">39.99 <span>U$D</span></p>
+            </div>
 
-                <div class="product-div">
-                    <img src="/Images/men-shirt-simple.png">
+            <div class="product-div w-6/6 lg:2/6 shrink-0 snap-center">
+                <img src="/Images/men-shirt-simple.png">
 
-                    <a class="product-link">
-                        Simple Shirt
-                    </a>
+                <a class="product-link cursor-pointer text-2xl lg:text-xl">
+                    Simple Shirt
+                </a>
 
-                    <p class="product-price">29.99 <span>U$D</span></p>
-                </div>
+                <p class="product-price text-2xl lg:text-xl">29.99 <span>U$D</span></p>
+            </div>
 
-                <div class="product-div">
-                    <img src="/Images/men-shirt-structured.png">
+            <div class="product-div w-6/6 lg:2/6 shrink-0 snap-center">
+                <img src="/Images/men-shirt-structured.png">
 
-                    <a class="product-link">
-                        Structured Shirt
-                    </a>
+                <a class="product-link cursor-pointer text-2xl lg:text-xl">
+                    Structured Shirt
+                </a>
 
-                    <p class="product-price">49.99 <span>U$D</span></p>
-                </div>
+                <p class="product-price text-2xl lg:text-xl">49.99 <span>U$D</span></p>
+            </div>
 
-                <div class="product-div">
-                    <img src="/Images/men-shirt-texturized-2.png">
+            <div class="product-div w-6/6 lg:2/6 shrink-0 snap-center">
+                <img src="/Images/men-shirt-texturized-2.png">
 
-                    <a class="product-link">
-                        Texturized Shirt
-                    </a>
+                <a class="product-link cursor-pointer text-2xl lg:text-xl">
+                    Texturized Shirt
+                </a>
 
-                    <p class="product-price">39.99 <span>U$D</span></p>
-                </div>
+                <p class="product-price text-2xl lg:text-xl">39.99 <span>U$D</span></p>
+            </div>
 
-                <div class="product-div">
-                    <img src="/Images/men-shirt-jeans.png">
+            <div class="product-div w-6/6 lg:2/6 shrink-0 snap-center">
+                <img src="/Images/men-shirt-jeans.png">
 
-                    <a class="product-link">
-                        Jeans Shirt
-                    </a>
+                <a class="product-link cursor-pointer text-2xl lg:text-xl">
+                    Jeans Shirt
+                </a>
 
-                    <p class="product-price">29.99 <span>U$D</span></p>
-                </div>
+                <p class="product-price text-2xl lg:text-xl">29.99 <span>U$D</span></p>
+            </div>
 
-                <div class="product-div">
-                    <img src="/Images/men-shirt-structured-2.png">
+            <div class="product-div w-6/6 lg:2/6 shrink-0 snap-center">
+                <img src="/Images/men-shirt-structured-2.png">
 
-                    <a class="product-link">
-                        Structured Shirt
-                    </a>
+                <a class="product-link cursor-pointer text-2xl lg:text-xl">
+                    Structured Shirt
+                </a>
 
-                    <p class="product-price">49.99 <span>U$D</span></p>
-                </div>
-            </section>
-        </div>
+                <p class="product-price text-2xl lg:text-xl">49.99 <span>U$D</span></p>
+            </div>
+        </section>
     </main>
+
+    <footer class="absolute flex flex-col left-0 right-0 bottom-0 items-center">
+        <div>
+            <p>&#169;LOGO - ALL RIGHTS DESERVED</p>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>

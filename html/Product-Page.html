@@ -6,9 +6,6 @@
     <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <title>... - Logo</title>
-    <link rel="stylesheet" href="Styles/Header.css">
-    <link rel="stylesheet" href="Styles/Main.css">
-    <link rel="stylesheet" href="Styles/Product-Page.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -23,11 +20,10 @@
     </script>
 </head>
 
-<body class="bg-principal pt-36 lg:pt-16">
-    <header
-        class="bg-black bg-opacity-30 fixed flex flex-row top-0 right-0 left-0 h-36 lg:h-16 items-center justify-between hover:bg-white transition duration-300">
+<body class="bg-principal pt-36 lg:pt-16 overflow-x-hidden">
+    <header class="bg-black bg-opacity-30 fixed flex flex-row top-0 right-0 left-0 h-36 lg:h-16 items-center justify-between hover:bg-white transition duration-300 z-50">
         <div class="flex flex-row items-center">
-            <div class="text-7xl lg:text-4xl font-bold px-8 select-none"><a href="Home-Page.html">LOGO</a></div>
+            <div class="text-7xl lg:text-4xl font-bold px-8 select-none"><a href="/Home-Page.html">LOGO</a></div>
             <ul class="hidden lg:flex text-xl gap-x-4 items-center h-16 cursor-pointer">
                 <li class="hover:underline">MEN</li>
                 <li class="hover:underline">WOMEN</li>
@@ -37,15 +33,15 @@
         </div>
 
         <div>
-            <ul class="flex flex-row gap-x-8 pe-8">
+            <ul class="flex flex-row gap-x-8 pr-8">
                 <li class="h-16 w-16 lg:h-6 lg:w-6"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image"
-                        src="Icons/heart.svg" name="WishButton" id="WishListButton"></li>
+                        src="/Icons/heart.svg" name="WishButton" id="WishListButton"></li>
                 <li class="h-16 w-16 lg:h-6 lg:w-6"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image"
-                        src="Icons/search.svg" name="SearchBut" id="SearchButton"></li>
+                        src="/Icons/search.svg" name="SearchBut" id="SearchButton"></li>
                 <li class="h-16 w-16 lg:h-6 lg:w-6"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image"
-                        src="Icons/bag.svg" name="CartButton" id="CartButton"></li>
+                        src="/Icons/bag.svg" name="CartButton" id="CartButton"></li>
                 <li class="h-16 w-16 lg:h-6 lg:w-6 lg:hidden"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image"
-                        src="Icons/hamburger-menu.svg" name="CartButton" id="CartButton"></li>
+                        src="/Icons/hamburger-menu.svg" name="CartButton" id="CartButton"></li>
             </ul>
         </div>
     </header>
@@ -53,7 +49,7 @@
     <main class="">
         <div class="product-container flex flex-col w-screen lg:flex-row">
             <div class="product-image-div w-full lg:w-1/2">
-                <img class="product-image w-full" src="Images/men-shirt-texturized.png" alt="Imagem do produto">
+                <img class="product-image w-full" src="" alt="Imagem do produto">
             </div>
             <div class="product-infos w-full lg:w-1/2 lg:ps-20 px-10 pb-4 flex flex-col sticky bottom-0 bg-principal lg:bg-opacity-0 lg:px-8">
                 <div class="productName font-bold text-3xl mt-4">
@@ -65,8 +61,7 @@
                 </div>
 
 
-                <div class="flex flex-row lg:flex-col justify-between lg:gap-2 lg:mt-4">
-                    <div class="">
+                    <div class="flex flex-row lg:mt-4">
                         <label for="tamanho">Size:</label>
                         <select class="focus:outline-0" id="tamanho">
                             <option value="">SS</option>
@@ -78,11 +73,6 @@
                         </select>
                     </div>
 
-                    <div class="">
-                        <label for="quantidade">Qty:</label>
-                        <input class="px-2 w-6 focus:outline-0" type="number" id="quantidade" value="1">
-                    </div>
-                </div>
 
 
                 <div class="flex flex-col mt-4 gap-2">
@@ -98,7 +88,7 @@
         </div>
     </main>
 
-    <script src="js/productPage.js"></script>
+    <script src="/js/productPage.js"></script>
 </body>
 
 </html>

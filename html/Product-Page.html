@@ -13,6 +13,7 @@
                 extend: {
                     colors: {
                         principal: '#c2b792',
+                        secundaria: '#706850',
                     }
                 }
             }
@@ -21,7 +22,8 @@
 </head>
 
 <body class="bg-principal pt-36 lg:pt-16 overflow-x-hidden">
-    <header class="bg-black bg-opacity-30 fixed flex flex-row top-0 right-0 left-0 h-36 lg:h-16 items-center justify-between hover:bg-white transition duration-300 z-50">
+    <header
+        class="bg-black bg-opacity-30 fixed flex flex-row top-0 right-0 left-0 h-36 lg:h-16 items-center justify-between hover:bg-white transition duration-300 z-50">
         <div class="flex flex-row items-center">
             <div class="text-7xl lg:text-4xl font-bold px-8 select-none"><a href="/Home-Page.html">LOGO</a></div>
             <ul class="hidden lg:flex text-xl gap-x-4 items-center h-16 cursor-pointer">
@@ -38,10 +40,15 @@
                         src="/Icons/heart.svg" name="WishButton" id="WishListButton"></li>
                 <li class="h-16 w-16 lg:h-6 lg:w-6"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image"
                         src="/Icons/search.svg" name="SearchBut" id="SearchButton"></li>
-                <li class="h-16 w-16 lg:h-6 lg:w-6"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image"
-                        src="/Icons/bag.svg" name="CartButton" id="CartButton"></li>
+                <li class="h-16 w-16 lg:h-6 lg:w-6 relative"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image"
+                        src="/Icons/bag.svg" name="CartButton" id="CartButton">
+                    <div id="numero-carrinho" class="rounded-full px-2 absolute top-1/3 lg:top-1/4 left-1/4 lg:left-0 text-3xl font-black lg:text-sm select-none"></div>
+                    <label for="numero-carrinho" class="hidden"></label>
+                </li>
                 <li class="h-16 w-16 lg:h-6 lg:w-6 lg:hidden"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image"
-                        src="/Icons/hamburger-menu.svg" name="CartButton" id="CartButton"></li>
+                        src="/Icons/hamburger-menu.svg" name="CartButton" id="CartButton">
+
+                </li>
             </ul>
         </div>
     </header>
@@ -51,7 +58,8 @@
             <div class="product-image-div w-full lg:w-1/2">
                 <img class="product-image w-full" src="" alt="Imagem do produto">
             </div>
-            <div class="product-infos w-full lg:w-1/2 lg:ps-20 px-10 pb-4 flex flex-col sticky bottom-0 bg-principal lg:bg-opacity-0 lg:px-8">
+            <div
+                class="product-infos w-full lg:w-1/2 lg:ps-20 px-10 pb-4 flex flex-col sticky bottom-0 bg-principal lg:bg-opacity-0 lg:px-8">
                 <div class="productName font-bold text-3xl mt-4">
                     Nome Produto
                 </div>
@@ -61,17 +69,17 @@
                 </div>
 
 
-                    <div class="flex flex-row lg:mt-4">
-                        <label for="tamanho">Size:</label>
-                        <select class="focus:outline-0" id="tamanho">
-                            <option value="">SS</option>
-                            <option value="" selected>S</option>
-                            <option value="">M</option>
-                            <option value="">L</option>
-                            <option value="">XL</option>
-                            <option value="">XXL</option>
-                        </select>
-                    </div>
+                <div class="flex flex-row lg:mt-4">
+                    <label for="tamanho">Size:</label>
+                    <select class="focus:outline-0" id="tamanho">
+                        <option value="">SS</option>
+                        <option value="" selected>S</option>
+                        <option value="">M</option>
+                        <option value="">L</option>
+                        <option value="">XL</option>
+                        <option value="">XXL</option>
+                    </select>
+                </div>
 
 
 

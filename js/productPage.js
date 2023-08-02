@@ -7,10 +7,17 @@ const nomeProduto = document.querySelector('.productName')
 const precoProduto = document.querySelector('.productPrice')
 const imagemProduto = document.querySelector('.product-image')
 
+const botaoCarrinho = document.querySelector('.shopping-bag')
+
+const iconeCarrinho = document.querySelector('#numero-carrinho')
+
 nomeProduto.innerHTML = nome
 precoProduto.innerHTML = preco
 imagemProduto.src = imagem
 
 document.title = titulo
 
-console.log(imagemProduto)
+botaoCarrinho.addEventListener("click", () => {
+    iconeCarrinho.innerHTML ++
+})
+

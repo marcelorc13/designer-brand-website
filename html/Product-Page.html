@@ -21,9 +21,9 @@
     </script>
 </head>
 
-<body class="bg-principal pt-36 lg:pt-16 overflow-x-hidden">
+<body class="bg-principal pt-36 lg:pt-16 relative">
     <header
-        class="bg-black bg-opacity-30 fixed flex flex-row top-0 right-0 left-0 h-36 lg:h-16 items-center justify-between hover:bg-white transition duration-300 z-50">
+        class="bg-black bg-opacity-30 w-screen fixed flex flex-row top-0 right-0 left-0 h-36 lg:h-16 items-center justify-between hover:bg-white transition duration-300 z-50">
         <div class="flex flex-row items-center">
             <div class="text-7xl lg:text-4xl font-bold px-8 select-none"><a href="/index.html">LOGO</a></div>
             <ul class="hidden lg:flex text-xl gap-x-4 items-center h-16 cursor-pointer">
@@ -42,24 +42,25 @@
                         src="/Icons/search.svg" name="SearchBut" id="SearchButton"></li>
                 <li class="h-16 w-16 lg:h-6 lg:w-6 relative"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image"
                         src="/Icons/bag.svg" name="CartButton" id="CartButton">
-                    <div id="numero-carrinho" class="rounded-full px-2 absolute top-1/3 lg:top-1/4 left-1/4 lg:left-0 text-3xl font-black lg:text-sm select-none"></div>
+                    <div id="numero-carrinho"
+                        class="rounded-full px-2 absolute top-1/3 lg:top-1/4 left-1/4 lg:left-0 text-3xl font-black lg:text-sm select-none">
+                    </div>
                     <label for="numero-carrinho" class="hidden"></label>
                 </li>
-                <li class="h-16 w-16 lg:h-6 lg:w-6 lg:hidden"><input class="h-16 w-16 lg:h-6 lg:w-6" type="image"
+                <li class="lg:hidden h-16 w-16 lg:h-6 lg:w-6 "><input class="h-16 w-16 lg:h-6 lg:w-6" type="image"
                         src="/Icons/hamburger-menu.svg" name="CartButton" id="CartButton">
-
                 </li>
             </ul>
         </div>
     </header>
 
     <main class="">
-        <div class="product-container flex flex-col w-screen lg:flex-row">
+        <div class="product-container relative flex flex-col w-screen lg:flex-row">
             <div class="product-image-div w-full lg:w-1/2">
                 <img class="product-image w-full" src="" alt="Imagem do produto">
             </div>
             <div
-                class="product-infos w-full lg:w-1/2 lg:ps-20 px-10 pb-4 flex flex-col sticky bottom-0 bg-principal lg:bg-opacity-0 lg:px-8">
+                class="product-infos lg:relative w-full h-auto lg:w-1/2 px-10 pb-4 flex flex-col sticky bottom-0 bg-principal lg:bg-opacity-0 lg:mx-8">
                 <div class="productName font-bold text-3xl mt-4">
                     Nome Produto
                 </div>
@@ -83,12 +84,14 @@
 
 
 
-                <div class="flex flex-col mt-4 gap-2">
-                    <button class="btn shopping-bag bg-white rounded p-2" value="adcionarCarrinho">
+                <div id="buttons-div" class="flex flex-col gap-2 mt-20 lg:mt-60">
+                    <div id="adicionado-ao-carrinho" class="bg-white hidden rounded-full justify-center top-1/2 left-1/2 bg-opacity-50 py-8">The item was added in the shopping bag</div>
+                    
+                    <button class="btn shopping-bag bg-white rounded p-8 lg:p-2 font-bold" value="adcionarCarrinho">
                         ADD TO SHOPPING BAG
                     </button>
-
-                    <button class="btn shop-now bg-white rounded p-2" value="comprarAgora">
+                    
+                    <button class="btn shop-now bg-white rounded p-8 lg:p-2 font-bold" value="comprarAgora">
                         SHOP NOW
                     </button>
                 </div>

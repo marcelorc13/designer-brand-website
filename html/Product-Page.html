@@ -14,14 +14,14 @@
                     colors: {
                         principal: '#c2b792',
                         secundaria: '#706850',
-                    }
-                }
-            }
+                    },
+                },
+            },
         }
     </script>
 </head>
 
-<body class="bg-principal pt-36 lg:pt-16 relative">
+<body class="bg-principal pt-36 lg:pt-16 relative overflow-x-hidden">
     <header
         class="bg-black bg-opacity-30 w-screen fixed flex flex-row top-0 right-0 left-0 h-36 lg:h-16 items-center justify-between hover:bg-white transition duration-300 z-50">
         <div class="flex flex-row items-center">
@@ -55,12 +55,12 @@
     </header>
 
     <main class="">
-        <div class="product-container relative flex flex-col w-screen lg:flex-row">
+        <div class="product-container flex flex-col w-screen lg:flex-row">
             <div class="product-image-div w-full lg:w-1/2">
                 <img class="product-image w-full" src="" alt="Imagem do produto">
             </div>
             <div
-                class="product-infos lg:relative w-full h-auto lg:w-1/2 px-10 pb-4 flex flex-col sticky bottom-0 bg-principal lg:bg-opacity-0 lg:mx-8">
+                class="product-infos w-full h-auto lg:w-1/2 px-10 pb-4 flex flex-col sticky bottom-0 bg-principal lg:bg-opacity-0 lg:mx-8">
                 <div class="productName font-bold text-3xl mt-4">
                     Nome Produto
                 </div>
@@ -82,16 +82,14 @@
                     </select>
                 </div>
 
+                <div id="adicionado-ao-carrinho" class="bg-white bg-opacity-30 hidden absolute rounded-3xl justify-center top-1/3 self-center lg:top-60  py-8 px-6 font-bold">The item was added to the shopping bag</div>
 
-
-                <div id="buttons-div" class="flex flex-col gap-2 mt-20 lg:mt-60">
-                    <div id="adicionado-ao-carrinho" class="bg-white hidden rounded-full justify-center top-1/2 left-1/2 bg-opacity-50 py-8">The item was added in the shopping bag</div>
-                    
-                    <button class="btn shopping-bag bg-white rounded p-8 lg:p-2 font-bold" value="adcionarCarrinho">
+                <div id="buttons-div" class="flex flex-col gap-2 mt-36 lg:mt-60">
+                    <button class="btn shopping-bag bg-white rounded p-8 lg:p-2 font-bold hover:bg-black hover:text-white hover:transition shadow-sm shadow-black" value="adcionarCarrinho">
                         ADD TO SHOPPING BAG
                     </button>
                     
-                    <button class="btn shop-now bg-white rounded p-8 lg:p-2 font-bold" value="comprarAgora">
+                    <button class="btn shop-now bg-white rounded p-8 lg:p-2 font-bold hover:bg-black hover:text-white hover:transition shadow-sm shadow-black" value="comprarAgora">
                         SHOP NOW
                     </button>
                 </div>
